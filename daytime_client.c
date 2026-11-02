@@ -24,7 +24,7 @@ int	main(int argc, char *argv[])
 		hostname = "localhost";
 	hostname = argv[1];
 
-	socket_fd = open_connection(hostname, "daytime");
+	socket_fd = open_connection(hostname, "13013");
 	if (socket_fd < 0)
 	{
 		fprintf(stderr, "Error: could not open connection to %s\n", hostname);
